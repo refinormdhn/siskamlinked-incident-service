@@ -1,6 +1,8 @@
 const swaggerJsdoc = require('swagger-jsdoc');
 const path = require('path');
 
+const serverUrl = process.env.SWAGGER_SERVER_URL || 'http://localhost:3021';
+
 const options = {
     definition: {
         openapi: '3.0.0',
@@ -11,9 +13,13 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:3021',
-                description: 'Development Server'
+                url: serverUrl,
+                description: 'API Server'
             },
+            {
+                url: 'https://18223070.tesatepadang.space',
+                description: 'Production Server'
+            }
         ],
         components: {
             schemas: {
