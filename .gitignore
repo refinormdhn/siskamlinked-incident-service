@@ -1,0 +1,16 @@
+node_modules/
+package-lock.json   # Opsional: Beberapa tim menyarankan commit ini, beberapa tidak. Untuk tugas kuliah, boleh di-commit.
+
+.env
+
+*.db
+*.sqlite
+
+.DS_Store
+Thumbs.db
+
+*.log
+npm-debug.log
+
+.vscode/
+.idea/

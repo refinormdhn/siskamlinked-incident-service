@@ -1,0 +1,7 @@
+services:
+  incident-service:
+    build: .
+    container_name: incident-service
+    ports:
+      - "3021:3021"
+    restart: unless-stopped

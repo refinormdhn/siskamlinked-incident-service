@@ -1,0 +1,15 @@
+# Abaikan node_modules lokal (Biarkan Docker install sendiri)
+node_modules
+
+# Abaikan file git history
+.git
+
+# Abaikan file environment lokal (Docker punya env sendiri nanti)
+.env
+
+# Abaikan file Dockerfile itu sendiri (tidak perlu ada di dalam app)
+Dockerfile
+docker-compose.yml
+
+# Abaikan file database lokal
+*.db
